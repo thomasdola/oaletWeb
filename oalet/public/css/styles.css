@@ -1,0 +1,278 @@
+html, body {
+    /*height: 100%;*/
+    font-family: "Source Sans Pro",sans-serif;
+    background: #eee;
+}
+
+.Welcome__Header, 
+.Auth__Header,
+.Page__Header,
+.Dashboard__Page__Header {
+    background-image: linear-gradient(135deg,#573e81,#133259 40%,#133259);
+    color: #fff;
+}
+
+.Dashboard__Page__Header{
+    height: 20vh;
+}
+
+.Welcome__Header{
+    height: 100vh;
+}
+
+.Auth__Header{
+    height: 30vh;
+}
+
+.Page__Header{
+    height: 20vh;
+}
+
+.Action__Title, .Page__BreadCrumb{
+    position: relative;
+    top: 15vh;
+    height: 10vh;
+    background: linear-gradient(to right,#133259 30%,#0d233e);
+    border-top: 1px solid #143660;
+    padding: 3vh 0;
+}
+
+
+
+.User__Info__Container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+
+.Account__Figure{
+    font-size: 3em;
+    flex-basis: 100%;
+}
+
+.Sub__Nav{
+    background: linear-gradient(to right,#133259 30%,#0d233e);
+    /*border-top: 1px solid white;*/
+    flex-basis: 100%;
+}
+
+.Sub__Nav > .container > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+
+
+.Action__Title span{
+    font-size: 2em;
+    color: #fff;
+}
+
+.Page__BreadCrumb{
+    top: 5vh;
+}
+
+.Page__BreadCrumb .breadcrumb{
+    background: transparent;
+}
+
+.Page__BreadCrumb .breadcrumb a{
+    color: #00baf3;
+}
+
+.Page__BreadCrumb .breadcrumb .active{
+    color: white;
+}
+
+.Page__BreadCrumb .breadcrumb a:hover{
+    color: white;
+    text-decoration: none;
+    /*text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;*/
+}
+
+.Logo__Text{
+    font-size: 1.3em; 
+}
+
+.navbar-brand a:hover{
+    text-decoration: none;
+}
+
+.Register__Form__Card, .SignIn__Form__Card, 
+.SingIn__Button__Card, .Register__Button__Card{
+    border-bottom: solid 1px #c9c9c9;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.SingIn__Button__Card, .Register__Button__Card{
+    border-radius: 0 0 8px 8px;
+    color: #3a3a3a;
+}
+
+.Register__Form__Card .form-control, .SignIn__Form__Card .form-control, 
+.Register__Form__Card .btn, .SignIn__Form__Card .btn, 
+.Register__Button__Card .btn, .SingIn__Button__Card .btn{
+    border-radius: 5px;
+}
+
+.Register__Form__Card .c-indicator{
+    border: 1px solid #00baf3;
+}
+
+.Main__Logo{
+    width: 30px;
+}
+
+.Navigation,.Navigation a {
+    color: #e2e1e7;
+    font-size: .9em;
+    font-weight: 100;
+}
+
+.Banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    justify-content: space-around;
+    height: 35vh;
+    background: transparent;
+}
+
+.Banner h1{
+    font-size: 7em;
+}
+
+.btn-call-to-action, 
+.Register__Form__Card .btn,
+.SignIn__Form__Card .btn{
+    background-color: #00baf3;
+    border-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-call-to-action:hover{
+    background-color: white;
+    color: #00baf3;
+}
+
+.Navigation ul > li{
+    margin-right: 1em;
+}
+
+.Navigation ul > li:last-child{
+    margin-right: 0;
+}
+ 
+.SingIn__Button__Card .btn, 
+.Register__Button__Card .btn{
+    border-color: #00baf3;
+    border-radius: 5px;
+}
+
+.SingIn__Button__Card .btn,
+.Register__Button__Card .btn{
+    color: #00baf3;
+}
+
+.SingIn__Button__Card .btn:hover,
+.Register__Button__Card .btn:hover{
+    color: white;
+    background: #00baf3;
+    border-color: white;
+}
+
+.sign-in-btn{
+    border: none;
+}
+
+.sign-in-btn:hover{
+    background-color: white;
+    color: #00baf3;
+    border-color: transparent;
+}
+
+.nav-link:hover{
+    color: #00baf3;
+}
+
+.More__Menu{
+    border-radius: 5px;
+}
+
+.More__Menu > a{
+    color: #3a3a3a;
+}
+
+.More__Menu > a:hover{
+    background-image: linear-gradient(135deg,#573e81,#133259 40%,#133259);
+    color: #00baf3;
+}
+
+.Terms__Conditions{
+    color: #00baf3;
+}
+
+.Terms__Conditions:hover{
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 33.9em) {
+    .Navigation ul > li{
+        margin-right: 0;
+    }
+
+    .Banner h1{
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width: 47.9em) {
+    .Navigation ul > li{
+        margin-right: 0;
+    }
+
+    .Banner h1{
+        font-size: 3em;
+    }
+
+    .Banner h3{
+        font-size: 1em;
+    }
+
+    .btn-call-to-action{
+        /*height: 150px;*/
+    }
+
+    .Banner {
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 61.9em) {
+    .Navigation ul > li{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 74.9em) {
+
+}
